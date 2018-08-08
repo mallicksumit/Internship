@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Frag2">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <EditText
+        android:id="@+id/search"
+        android:layout_width="295dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginEnd="89dp"
+        android:hint="Search" />
+
+    <ImageButton
+        android:layout_width="80dp"
+        android:layout_height="46dp"
+        android:id="@+id/imagesearch"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginEnd="7dp"
+        android:background="@color/cardview_light_background"
+        android:src="@drawable/ic_search_black_24dp" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerview1"
+            android:layout_width="match_parent"
+            android:layout_height="462dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="49dp"
+            android:visibility="invisible"
+/>
+
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="134dp"
+        android:id="@+id/progressbar"
+        android:visibility="invisible"/>
+    <TextView
+        android:layout_width="351dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="192dp"
+        android:text="NO IMAGE FOUND FOR THE SEARCH!!
+                      TRY AGAIN"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:id="@+id/text"
+        android:visibility="invisible"
+        />
+
+</RelativeLayout>
